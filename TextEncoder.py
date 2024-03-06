@@ -5,8 +5,7 @@ class TextEncoder(nn.Module):
         Create the model and set its weights frozen. 
         Use Transformers library docs to find out how to do this.
         """
-
-        # we are using the CLS token hidden representation as the sentence's embedding
+        # use the CLS token hidden representation as the sentence's embedding
         self.target_token_idx = 0
 
     def forward(self, input_ids, attention_mask):
